@@ -3,6 +3,7 @@ REGEX =
 
 REGEX_RAW_STRING = /\A>([[:alnum:]]{5,25});(([0-9]|\.)*);ID=([0-9]{15})<\z/
 
+REGEX_RAW_DATA =/\A>REV([0-9]{12})(\+|\-)([0-9]{7})(\+|\-)([0-9]{16});ID=([0-9]{15})<\z/
 
 def process_input(input_string="AABBBBCDDDDDEEEFFFFFGGGGHHHHHIIIJJJKL")
   input_string =    REGEX.match input_string
