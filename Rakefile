@@ -1,3 +1,3 @@
 # require your app file first
-# require 'TransCriolloWebAPI'
+# require_relative "./app/main.rb"
 require 'sinatra/activerecord/rake'

@@ -2,12 +2,14 @@
 # encoding: utf-8
 
 ## Load Required Gems ##
-%w[sinatra haml oj activerecord pg].each do |gem| 
+%w[sinatra haml oj activerecord pg ./lib/helper sinatra-activerecord].each do |gem| 
   require gem
 end
    
 ### Main Sinatra Class ###
 class TransCriolloWebAPI < Sinatra::Base
+  
+  helpers Helpers 
   ### Configure Block ###
   configure do
     set :server, :puma
